@@ -1,0 +1,62 @@
+.game {
+    width: 1000px;
+    height: 300px;
+    border-bottom: 4px solid #000;
+    margin: auto;
+}
+#mario {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/mario.png);
+    background-size: 100px 100px;
+    position: relative;
+    top: 200px;
+    left: 75px;
+}
+#tree {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/tree.png);
+    background-size: 100px 100px;
+    position: relative;
+    top: 110px;
+    left: 900px;
+    animation: treeMuv 4.5s infinite linear;
+}
+@keyframes treeMuv {
+    0% {
+        left: 900px;
+    }
+    100% {
+        left: -20px
+    }
+}
+.jump {
+    animation: jump 1.5s linear;
+}
+@keyframes jump {
+    0% {
+        top: 200px;
+    }
+    20%{
+        top: 150px;
+    }
+    40% {
+        top: 100px;
+    }
+    50% {
+        top: 80px;
+    }
+    55% {
+        top: 55px;
+    }
+    60% {
+        top: 80px;
+    }
+    80% {
+        top: 150px;
+    }
+    100% {
+        top: 200px
+    }
+}
